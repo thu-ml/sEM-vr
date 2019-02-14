@@ -1,0 +1,8 @@
+.idea
+debug
+release
+data
+*.pdf
+scripts/*.sh
+cmake-build-debug
+results_nips_k10
