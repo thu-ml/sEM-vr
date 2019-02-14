@@ -10,6 +10,13 @@ Prerequisites
 * C++ compiler that supports C++1y (tested with gcc-5.4)
 * OpenMP
 
+Get the repository
+====
+
+```
+git clone --recursive https://github.com/thu-ml/sEM-vr.git
+```
+
 
 Prepare data
 ====
@@ -23,6 +30,7 @@ wget https://archive.ics.uci.edu/ml/machine-learning-databases/bag-of-words/docw
 wget https://archive.ics.uci.edu/ml/machine-learning-databases/bag-of-words/vocab.nips.txt
 gunzip docword.nips.txt.gz
 python ../scripts/convert_data.py --data nips --ntest 50
+cd ..
 ```
 
 Data format
@@ -44,8 +52,6 @@ where `N` is the number of key-value pairs in this line. Each key-value pair `v1
 
 Build
 ====
-
-First, clone the repository into the folder `sEM-vr`
 
 ```
 ./build.sh
